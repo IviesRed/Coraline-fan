@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <title>Coraline</title>
+    <style>
+      body {
+        background: linear-gradient(#050616, #110c1a);
+      }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        color: #cdcff3;
+      }
+      h2 {
+        color: #cdcff3;
+        font-size: 45px;
+        text-align: center;
+      }
+      p {
+        max-width: px;
+        color: #cdcff3;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 20px 30%;
+        line-height: 23px;
+      }
+
+      ul {
+        display: block;
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+      }
+      li {
+        display: inline;
+        margin: 0 auto;
+        padding: 0px;
+      }
+      button {
+        background-color: #7c82f4;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+        min-width: 10%;
+        border-width: 0px;
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px rgba(16, 19, 69, 0.4);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #101345;
+        color: #7c82f4;
+      }
+      div {
+        color: #7c82f4;
+        text-align: center;
+      }
+      span {
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+      }
+      .mainPic {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .list {
+        max-width: 250px;
+        display: inline;
+        margin: 0 auto;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <h1>Coraline</h1>
+  <h2>Danger exists in the details</h2>
+  <hr />
+  <br />
+  <img
+    class="mainPic"
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/382/original/48985813941_412f92d20c_b.jpg?1630425621"
+  />
+  <p>
+    <strong>Coraline</strong> is a movie about the dangers a young girl falls
+    into while wishing for an idealized world. Though there's plenty of wonder
+    waiting ahead of her, Coraline quickly learns that the grass is not quite
+    always greener. Learn more on
+    <a href="https://en.wikipedia.org/wiki/Coraline_(film)" target="_blank"
+      ><em>Wikipedia</em></a
+    >!
+  </p>
+  <ul>
+    <li>
+      <img
+        class="list"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/386/original/film__14756-coraline--hi_res-af6576c8.jpg?1630426004"
+      />
+    </li>
+    <li>
+      <img
+        class="list"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/398/original/Coraline02.png?1630432443"
+      />
+    </li>
+    <li>
+      <img
+        class="list"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/399/original/Coraline03.png?1630432454"
+      />
+    </li>
+  </ul>
+  <button>
+    😁 Become a fan!
+  </button>
+  <br />
+  <div>This page was coded by... <span>Violet Red.</span></div>
+  <script>
+    function goToSite() {
+      alert("Hey, I have a few questions before you become a fan!");
+      let name = prompt("What is your name?");
+      alert("Ah, hello, " + name + "!");
+      let response = prompt("Have you read the book as well? (Answer Y or N)");
+      response.toLocaleUpperCase();
+      if (response === "Y") {
+        alert("Wonderful!");
+      } else if (response == "N") {
+        alert(
+          "I recommend the books. They were written by Neil Gaiman, a fantastic writer."
+        );
+      } else {
+        alert("I'm sorry, you've entered an invalid response.");
+      }
+      let email = prompt("Enter your email here please, " + name + ".");
+      alert("Thank you, you should recieve an email from us soon!");
+    }
+    let fan = document.querySelector("Button");
+    fan.addEventListener("click", goToSite);
+  </script>
+  <body></body>
+</html>
